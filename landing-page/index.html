@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Manipulating the DOM</title>
+  <!-- Load Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans:900|Merriweather&display=swap" rel="stylesheet">  <!-- Load Styles -->
+  <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+  <!-- HTML Follows BEM naming conventions 
+  IDs are only used for sections to connect menu achors to sections -->
+  <header class="page__header">
+    <nav class="navbar__menu">
+      <!-- Navigation starts as empty UL that will be populated with JS -->
+      <ul id="navbar__list">
+      </ul>
+
+    </nav>
+  </header>
+  <main>
+    <header class="main__hero">
+      <h1>Portfolio </h1>
+      <h2>Hafiz Muhammad Ali Sajjad</h2>
+    </header>
+    <!-- Each Section has an ID (used for the anchor) and 
+    a data attribute that will populate the li node.
+    Adding more sections will automatically populate nav.
+    The first section is set to active class by default -->
+    <section id="section1" data-nav="Experience" >
+      <div class="landing__container">
+        <h2>WORK EXPERIENCE</h2>
+        <h4>Test centers Administrator(05/14–12/19)</h4>
+        <p>Leading a team of 5 persons for 4 test centers(Pearson Vue, EC Council, Kryterion & PSI).</p>
+        <p>Configuration management for Applications, Operating Systems and other tools.</p>
+        <p>Communication and collaboration with central support team for issues resolution.</p>
+        </div>
+    </section>
+    <section id="section2" data-nav="Education">
+      <div class="landing__container">
+        <h2>EDUCATION</h2>
+        <h4>Master of Science Web Engineering(10/2020-Present)</h4>
+        <h4>BSc, Computer Science(Sep 15–Sep 19)</h4>
+      </div>
+    </section>
+    <section id="section3" data-nav="Projects">
+      <div class="landing__container">
+        <h2>Projects</h2>
+        <p>Final Year Project: Website development for Rent-a-Car (PHP, CSS, HTML, Bootstrap).</p>
+        <p>Capstone Project – Travel App</p>
+        <p>Personal Blog Website: CSS, Website Layout, Website </p>
+        <p>Landing Page : JavaScript & The DOM    </p>
+        <p>Weather Journal App : Web API's and Asynchronous Applications </p>
+        <p>Evaluate Article with Natural Language Processing: Build Tools and Single Page Web Apps. </p>
+      </div>
+      </div>
+    </section>
+    <section id="section4" data-nav="Skills">
+      <div class="landing__container">
+        <h2>Skills</h2>
+        <p>Website development experience with JS, Jquery, PHP, HTML, JSON, CSS.</p>
+        <p>Knowledge of Web APIs and Build Tools</p>
+        <p>Good understanding of internet protocols: TCPIP, UDP, Ethernet etc. </p>
+        <p> Proficiency in using Microsoft Office - Excel, Word and PowerPoint.</p>
+      </div>
+    </section>
+  </main>
+  <footer class="page__footer">
+    <p>&copy Udacity</p>
+  </footer>
+  <script src="js/app.js">
+  
+  </script>
+</body>
+
+</html>
