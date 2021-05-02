@@ -1,4 +1,5 @@
 # Landing Page Project
+![ezgif com-gif-maker](https://user-images.githubusercontent.com/70126786/116807510-f8810000-ab4c-11eb-9cda-786fe30e080b.gif)
 
 ## Table of Contents
 * app.js
